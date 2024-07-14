@@ -3,7 +3,7 @@ import Button from './Button/Button';
 import ImageGallery from './ImageGallery/ImageGallery';
 import Searchbar from './Searchbar/Searchbar';
 import Loader from './Loader/Loader';
-import css from './App.module.css';
+import styles from './App.module.css';
 import { getAPI } from 'pixabay-api';
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -83,7 +83,7 @@ export const App = () => {
 
  
     return (
-      <div className={css.App}>
+      <div className={styles.App}>
         <Searchbar onSubmit={handleSearchSubmit} />
         <ImageGallery images={images} />
         {isLoading && <Loader />}

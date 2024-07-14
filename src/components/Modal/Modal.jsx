@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from 'prop-types';
-import css from './Modal.module.css';
+import styles from './Modal.module.css';
 
 const Modal = ({ image, tags, onClose }) => {
    
@@ -26,8 +26,8 @@ const Modal = ({ image, tags, onClose }) => {
     }, []);
 
         return (
-        <div className={css.overlay}>
-            <div className={css.modal}>
+        <div className={styles.overlay}>
+            <div className={styles.modal}>
                 <img src={image} alt={tags} />
             </div>
         </div>
